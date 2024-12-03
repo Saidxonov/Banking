@@ -1,0 +1,725 @@
+/* Please ❤ this if you like it! */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+  background-image: url("https://assets.codepen.io/1462889/web-app-back.svg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+  margin: 0;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1;
+  color: #fff;
+  margin: 0;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.color-yellow {
+  color: #ffdf74;
+}
+
+.color-blue {
+  color: #7a95ec;
+}
+
+.section-fluid-main {
+  position: relative;
+  display: block;
+  width: calc(100% - 40px);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  z-index: 3;
+}
+
+.section-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.section-col-1 {
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.section-col-2 {
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.section {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 30px;
+  background-color: #303037;
+  border-radius: 200px/3px;
+}
+
+.section-col-1 .section {
+  border-radius: 400px/3px;
+}
+
+.section:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  display: block;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 200px/3px;
+  box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 200ms 100ms ease;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+.date-btn:checked + label,
+.date-btn:not(:checked) + label {
+  position: relative;
+  width: 100%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 15px;
+}
+
+.date-btn:checked + label span,
+.date-btn:not(:checked) + label span {
+  position: relative;
+  width: 100%;
+  background-color: #3760e2;
+  border-radius: 100px/3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffeba7;
+  height: 50px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 250ms linear, color 250ms ease;
+}
+
+.date-btn:checked + label span {
+  background-color: transparent;
+  color: #102770;
+}
+
+.date-btn:checked + label span:before,
+.date-btn:not(:checked) + label span:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  z-index: -2;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  display: block;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 100px/3px;
+  box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 200ms 100ms ease;
+}
+
+.date-btn:checked + label span:after,
+.date-btn:not(:checked) + label span:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin: -23px 0 0 -23px;
+  z-index: -1;
+  width: 46px;
+  height: 46px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  background-image: linear-gradient(196deg, #ffd341, #ffeba7);
+  transition: all 250ms linear;
+}
+
+.date-btn:checked + label span:after {
+  top: 1px;
+  left: 1px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  margin: 0;
+  border-radius: 100px/3px;
+}
+
+.section-progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #222;
+  border-radius: 2px;
+}
+
+.section-progress h6 {
+  color: #222;
+}
+
+.section-progress .income p {
+  color: #102770;
+}
+
+.section-progress .expense p {
+  color: #dba800;
+}
+
+.section-progress p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.income {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: linear-gradient(90deg, #102770 0%, #3760e2 95%, #fff7da 100%);
+}
+
+.expense {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 65%;
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: linear-gradient(90deg, #fff7da, #ffd341);
+}
+
+.income-tooltip,
+.expense-tooltip {
+  position: absolute;
+  display: block;
+  min-width: 120px;
+  top: 15px;
+  left: 50%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 8px 35px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%) rotate(-25deg);
+  transform-origin: center top;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.income-tooltip:before,
+.expense-tooltip:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 4px;
+  z-index: -1;
+  background-color: #fff;
+  transition: background-color 200ms 100ms ease;
+}
+
+.income-tooltip:after,
+.expense-tooltip:after {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  transition: border-bottom 200ms 100ms ease;
+}
+
+.expense-tooltip {
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.expense {
+  transition: width 200ms 200ms ease;
+}
+
+.income-tooltip {
+  transition: transform 200ms 400ms ease, opacity 200ms 400ms ease;
+}
+
+.income {
+  transition: width 250ms 400ms ease;
+}
+
+#date-1:checked ~ .section-col-1 .income.days-30 {
+  width: 65%;
+  transition: width 350ms 700ms ease;
+}
+
+#date-1:checked ~ .section-col-1 .expense.days-30 {
+  width: 35%;
+  transition: width 300ms 1050ms ease;
+}
+
+#date-1:checked ~ .section-col-1 .income.days-30 .income-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1050ms ease, opacity 400ms 1050ms ease;
+}
+
+#date-1:checked ~ .section-col-1 .expense.days-30 .expense-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1350ms ease, opacity 400ms 1350ms ease;
+}
+
+#date-2:checked ~ .section-col-1 .income.days-90 {
+  width: 55%;
+  transition: width 350ms 700ms ease;
+}
+
+.expense.days-90 {
+  left: 55%;
+}
+
+#date-2:checked ~ .section-col-1 .expense.days-90 {
+  width: 45%;
+  transition: width 300ms 1050ms ease;
+}
+
+#date-2:checked ~ .section-col-1 .income.days-90 .income-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1050ms ease, opacity 400ms 1050ms ease;
+}
+
+#date-2:checked ~ .section-col-1 .expense.days-90 .expense-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1350ms ease, opacity 400ms 1350ms ease;
+}
+
+#date-3:checked ~ .section-col-1 .income.days-180 {
+  width: 75%;
+  transition: width 350ms 700ms ease;
+}
+
+.expense.days-180 {
+  left: 75%;
+}
+
+#date-3:checked ~ .section-col-1 .expense.days-180 {
+  width: 25%;
+  transition: width 300ms 1050ms ease;
+}
+
+#date-3:checked ~ .section-col-1 .income.days-180 .income-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1050ms ease, opacity 400ms 1050ms ease;
+}
+
+#date-3:checked ~ .section-col-1 .expense.days-180 .expense-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1350ms ease, opacity 400ms 1350ms ease;
+}
+
+#date-4:checked ~ .section-col-1 .income.days-365 {
+  width: 72%;
+  transition: width 350ms 700ms ease;
+}
+
+.expense.days-365 {
+  left: 72%;
+}
+
+#date-4:checked ~ .section-col-1 .expense.days-365 {
+  width: 28%;
+  transition: width 300ms 1050ms ease;
+}
+
+#date-4:checked ~ .section-col-1 .income.days-365 .income-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1050ms ease, opacity 400ms 1050ms ease;
+}
+
+#date-4:checked ~ .section-col-1 .expense.days-365 .expense-tooltip {
+  transform: translateX(-50%) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 400ms 1350ms ease, opacity 400ms 1350ms ease;
+}
+
+.dark-light:checked + label,
+.dark-light:not(:checked) + label {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 20000;
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  box-shadow: 0 0 25px rgba(255, 235, 167, 0.45);
+}
+
+.dark-light:checked + label {
+  transform: rotate(360deg);
+}
+
+.dark-light:checked + label:after,
+.dark-light:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  top: 1px;
+  left: 1px;
+  overflow: hidden;
+  z-index: 2;
+  display: block;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-color: #102770;
+  background-image: url("https://assets.codepen.io/1462889/moon.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+
+.dark-light:checked + label:after {
+  opacity: 1;
+}
+
+.dark-light:checked + label:before,
+.dark-light:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #def9fe;
+  background-image: url("https://assets.codepen.io/1462889/sun.svg");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 200ms linear;
+}
+
+.dark-light:checked + label:before {
+  background-color: #000;
+}
+
+.light-back {
+  position: fixed;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: url("https://assets.codepen.io/1462889/back-page.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border-bottom-left-radius: 200%;
+  pointer-events: none;
+  transition: width 650ms ease, height 650ms ease,
+    border-bottom-left-radius 250ms ease;
+}
+
+.dark-light:checked ~ .light-back {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0;
+  pointer-events: auto;
+  transition: width 650ms ease, height 650ms ease,
+    border-bottom-left-radius 350ms 300ms ease;
+}
+
+.logo {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  display: block;
+  z-index: 1000;
+  transition: all 250ms linear;
+}
+
+.logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+  transition: filter 250ms linear;
+}
+
+.dark-light:checked ~ .section-fluid-main .logo img {
+  filter: brightness(10%);
+  transition: filter 250ms 500ms linear;
+}
+
+.section {
+  background-color: #303037;
+  transition: background-color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section {
+  background-color: #fff;
+  transition: background-color 200ms 200ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section:before {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 200ms 200ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .date-btn:checked + label span:before,
+.dark-light:checked
+  ~ .section-fluid-main
+  .date-btn:not(:checked)
+  + label
+  span:before {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 200ms 200ms ease;
+}
+
+h3 {
+  transition: color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main h3 {
+  color: #444;
+  transition: color 200ms 200ms ease;
+}
+
+.color-yellow {
+  transition: color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .color-yellow {
+  color: #ffc70f;
+  transition: color 200ms 200ms ease;
+}
+
+.section-progress {
+  transition: background-color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section-progress {
+  background-color: #efefef;
+  transition: background-color 200ms 200ms ease;
+}
+
+.section-progress h6 {
+  color: #222;
+  transition: color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section-progress h6 {
+  color: #fff;
+  transition: color 200ms 200ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .income-tooltip:after,
+.dark-light:checked ~ .section-fluid-main .expense-tooltip:after {
+  border-bottom: 10px solid #303037;
+  transition: border-bottom 200ms 200ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .income-tooltip:before,
+.dark-light:checked ~ .section-fluid-main .expense-tooltip:before {
+  background-color: #303037;
+  transition: background-color 200ms 200ms ease;
+}
+
+.section-progress .income p {
+  transition: color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section-progress .income p {
+  color: #7a95ec;
+  transition: color 200ms 200ms ease;
+}
+
+.section-progress .expense p {
+  transition: color 200ms 100ms ease;
+}
+
+.dark-light:checked ~ .section-fluid-main .section-progress .expense p {
+  color: #ffdf74;
+  transition: color 200ms 200ms ease;
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 36px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .section-col-1 {
+    padding: 10px;
+  }
+  .section-col-2 {
+    padding: 10px;
+  }
+  .date-btn:checked + label,
+  .date-btn:not(:checked) + label {
+    padding: 10px;
+  }
+  .section-fluid-main {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width: 575px) {
+  h3 {
+    font-size: 30px;
+  }
+  .section {
+    padding: 15px;
+  }
+  .section-col-1 {
+    padding: 5px;
+  }
+  .section-col-2 {
+    padding: 5px;
+  }
+  .date-btn:checked + label,
+  .date-btn:not(:checked) + label {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-col-2 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .date-btn:checked + label,
+  .date-btn:not(:checked) + label {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

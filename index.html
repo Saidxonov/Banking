@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <input
+      class="dark-light"
+      type="checkbox"
+      id="dark-light"
+      name="dark-light"
+    />
+    <label for="dark-light"></label>
+
+    <div class="light-back"></div>
+
+    <div class="section-fluid-main">
+      <div class="section-row">
+        <div class="section-col-2">
+          <div class="section">
+            <p class="color-blue">Your current balance</p>
+            <h3><span class="font-weight-500">$</span> 4,376.00</h3>
+          </div>
+        </div>
+        <div class="section-col-2">
+          <div class="section">
+            <p class="color-yellow">Your credit limit</p>
+            <h3><span class="font-weight-500">$</span> 8,500.00</h3>
+          </div>
+        </div>
+        <input
+          class="date-btn"
+          type="radio"
+          id="date-1"
+          name="date-btn"
+          checked
+        />
+        <label for="date-1"><span>30 days</span></label>
+        <input class="date-btn" type="radio" id="date-2" name="date-btn" />
+        <label for="date-2"><span>90 days</span></label>
+        <input class="date-btn" type="radio" id="date-3" name="date-btn" />
+        <label for="date-3"><span>180 days</span></label>
+        <input class="date-btn" type="radio" id="date-4" name="date-btn" />
+        <label for="date-4"><span>365 days</span></label>
+        <div class="section-col-1">
+          <div class="section">
+            <div class="section-progress">
+              <div class="income days-30">
+                <div class="income-tooltip">
+                  <p>Income</p>
+                  <h6>$ 2,501.57</h6>
+                </div>
+              </div>
+              <div class="expense days-30">
+                <div class="expense-tooltip">
+                  <p>Expense</p>
+                  <h6>$ 1,347.00</h6>
+                </div>
+              </div>
+              <div class="income days-90">
+                <div class="income-tooltip">
+                  <p>Income</p>
+                  <h6>$ 4,090.78</h6>
+                </div>
+              </div>
+              <div class="expense days-90">
+                <div class="expense-tooltip">
+                  <p>Expense</p>
+                  <h6>$ 3,347.00</h6>
+                </div>
+              </div>
+              <div class="income days-180">
+                <div class="income-tooltip">
+                  <p>Income</p>
+                  <h6>$ 14,352.96</h6>
+                </div>
+              </div>
+              <div class="expense days-180">
+                <div class="expense-tooltip">
+                  <p>Expense</p>
+                  <h6>$ 4,784.32</h6>
+                </div>
+              </div>
+              <div class="income days-365">
+                <div class="income-tooltip">
+                  <p>Income</p>
+                  <h6>$ 23,871.78</h6>
+                </div>
+              </div>
+              <div class="expense days-365">
+                <div class="expense-tooltip">
+                  <p>Expense</p>
+                  <h6>$ 9,283.47</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://front.codes/" class="logo" target="_blank">
+        <img src="https://assets.codepen.io/1462889/fcy.png" alt="" />
+      </a>
+    </div>
+  </body>
+</html>
